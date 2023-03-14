@@ -1,14 +1,25 @@
+/*Saya Muhammad Daffa Yusuf Fadhilah dengan NIM 2100543 mengerjakan evaluasi TP1
+dalam mata kuliah Design Pemrograman Berorientasi Objek
+untuk keberkahanNya maka saya tidak melakukan kecurangan seperti
+yang telah dispesifikasikan. Aamiin. */
+
 import java.util.ArrayList;
 
+// Class Mahasiswa
 public class Mahasiswa {
+
+    // Attribut private
     private String NIM;
     private String nama;
     private char jenis_kelamin;
-    private ArrayList<Buku> buku2;
-    private Laptop laptopmhs;
     private int nilai_praktikum;
     private int nilai_total;
 
+    // dengan tambahan composition dari class Buku dan Laptop
+    private ArrayList<Buku> buku2;
+    private Laptop laptopmhs;
+
+    //Constructor kosong
     public Mahasiswa() {
         this.NIM = "";
         this.nama = "";
@@ -19,7 +30,9 @@ public class Mahasiswa {
         this.nilai_total = 0;
     }
     
-    public Mahasiswa(String NIM, String nama, char jenis_kelamin, ArrayList<Buku> buku, Laptop laptopmhs, int nilai_praktikum, int nilai_total) {
+    // Constructor dengan parameter
+    public Mahasiswa(String NIM, String nama, char jenis_kelamin, ArrayList<Buku> buku, Laptop laptopmhs,
+            int nilai_praktikum, int nilai_total) {
         this.NIM = NIM;
         this.nama = nama;
         this.jenis_kelamin = jenis_kelamin;
@@ -29,6 +42,7 @@ public class Mahasiswa {
         this.nilai_total = nilai_total;
     }
 
+    // Setter, getter dan adder(khusus list)
     public void set_NIM(String NIM) {
         this.NIM = NIM;
     }
@@ -61,7 +75,7 @@ public class Mahasiswa {
         this.nilai_total = nilai_total;
     }
 
-    public String get_NIM(String NIM) {
+    public String get_NIM() {
         return this.NIM;
     }
     

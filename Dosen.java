@@ -1,16 +1,27 @@
+/*Saya Muhammad Daffa Yusuf Fadhilah dengan NIM 2100543 mengerjakan evaluasi TP1
+dalam mata kuliah Design Pemrograman Berorientasi Objek
+untuk keberkahanNya maka saya tidak melakukan kecurangan seperti
+yang telah dispesifikasikan. Aamiin. */
+
 import java.util.ArrayList;
 
+// Class Dosen
 public class Dosen {
+
+    // Attribut private
     private String NIP;
     private String nama;
     private char jenis_kelamin;
-    private ArrayList<Spidol> spidol2;
-    private Laptop laptopdsn;
     private ArrayList<String> materi_belajar;
     private ArrayList<String> tugas;
+    
+    // dengan tambahan composition dari class Spidol, Lapotp, Asdos, dan Mahasiswa  
+    private ArrayList<Spidol> spidol2;
+    private Laptop laptopdsn;
     private Asdos tim_asdos;
     private ArrayList<Mahasiswa> para_mahasiswa;
 
+    // Constructor kosong
     public Dosen() {
         this.NIP = "";
         this.nama = "";
@@ -23,7 +34,10 @@ public class Dosen {
         this.para_mahasiswa = new ArrayList<Mahasiswa>();
     }
     
-    public Dosen(String NIP, String nama, char jenis_kelamin, ArrayList<Spidol> spidol, Laptop laptopdsn, ArrayList<String> materi_belajar, ArrayList<String> tugas, Asdos tim_asdos, ArrayList<Mahasiswa> para_mahasiswa) {
+    // Constructor dengan parameter
+    public Dosen(String NIP, String nama, char jenis_kelamin, ArrayList<Spidol> spidol, Laptop laptopdsn,
+            ArrayList<String> materi_belajar, ArrayList<String> tugas, Asdos tim_asdos,
+            ArrayList<Mahasiswa> para_mahasiswa) {
         this.NIP = NIP;
         this.nama = nama;
         this.jenis_kelamin = jenis_kelamin;
@@ -34,7 +48,8 @@ public class Dosen {
         this.tim_asdos = tim_asdos;
         this.para_mahasiswa = para_mahasiswa;
     }
-
+    
+    // Setter, getter, dan adder(hanya untuk list)
     public void set_NIP(String NIP) {
         this.NIP = NIP;
     }
@@ -79,16 +94,17 @@ public class Dosen {
         this.tim_asdos = tim_asdos;
     }
 
-    public String get_NIP(String NIP) {
-        return this.NIP;
-    }
-
+    
     public void set_para_mahasiswa(ArrayList<Mahasiswa> para_mahasiswa) {
         this.para_mahasiswa = para_mahasiswa;
     }
     
     public void add_para_mahasiswa(Mahasiswa para_mahasiswa) {
         this.para_mahasiswa.add(para_mahasiswa);
+    }
+
+    public String get_NIP() {
+        return this.NIP;
     }
     
     public String get_nama() {
