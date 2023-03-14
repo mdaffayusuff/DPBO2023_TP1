@@ -36,7 +36,7 @@ Untuk eksekusi, saya menambahkan 2 kelas yang mana hanya digunakan untuk mempros
 
 ## **Hasil Eksekusi**
 ![Output](https://github.com/mdaffayusuff/DPBO2023_TP1/blob/main/output.png?raw=true)
-catatan : untuk materi, proker dan tugas belum ditambahkankedalam inputan yang menyebabkan bagian tersebut kosong
+catatan : untuk nilai, materi, proker dan tugas belum ditambahkankedalam inputan yang menyebabkan bagian tersebut kosong. Gunakan `beriNilaiTotal` untuk nilai akhir, `beriNilaiPraktikum` untuk nilai praktikum, `tambahMateridari()` untuk materi dari seorang dosen, `tambahTugasdari()` untuk tugas dari seorang dosen, `tambahMateriAsdosdari()` untuk materi dari asdos seorang dosen, `tambahTugasAsdosdari()` untuk tugas dari asdos seorang dosen, `tambahProkerKEC()` untuk proker KEC, `tambahMateriKEC()` untuk materi KEC, `tambahProkerplan_BEM()` untuk rencana proker BEM, `lakukanProker_BEM()` untuk proker yang dilakukan BEM, `evalProker_BEM()` untuk evaluasi proker BEM.
 
 ## **Fitur tambahan lain**
 Terdapat fitur-fitur tambahan yang dibuat dalam kelas **theProcess** yaitu :
